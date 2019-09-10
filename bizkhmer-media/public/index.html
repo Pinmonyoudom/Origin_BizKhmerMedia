@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/LogoBizKhmer.png">
+
+  <style id='rs-plugin-settings-inline-css' type='text/css'>
+    #rs-demo-id {}
+  </style>
+  <style type="text/css">
+    img.wp-smiley,
+    img.emoji {
+      display: inline !important;
+      border: none !important;
+      box-shadow: none !important;
+      height: 1em !important;
+      width: 1em !important;
+      margin: 0 .07em !important;
+      vertical-align: -0.1em !important;
+      background: none !important;
+      padding: 0 !important;
+    }
+  </style>
+  <link rel='stylesheet' id='digixon_header_google_fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%26subset%3Dlatin-ext&amp;ver=1.0.0' type='text/css' media='all' />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600%2C400%7COpen+Sans:400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+  <script type='text/javascript' src="./js/jquery.js"></script>
+  <script type='text/javascript' src="./js/jquery-migrate.min.js"></script>
+  <script type='text/javascript' src="./js/jquery.blockUI.min.js"></script>
+  <script type='text/javascript' src='./js/comment-reply.min.js'></script>
+  <script type='text/javascript' src='./js/hoverIntent.min.js'></script>
+  <script type='text/javascript' src='./js/wd-script.min.js'></script>
+  <script type='text/javascript' src='./js/js_composer_front.mine23c.js'></script>
+  <script type='text/javascript' src='./js/vc-accordion.min.js'></script>
+  <script type='text/javascript' src='./js/vc-tta-autoplay.min.js'></script>
+  <script type='text/javascript' src="./js/jquery.themepunch.tools.min.js"></script>
+  <script type='text/javascript' src="./js/jquery.themepunch.revolution.min.js"></script>
+  <script type='text/javascript' src='./js/jquery.blockUI.min.js'></script>
+  <title>BizKhmer Media</title>
+  <script type="text/javascript">
+    function revslider_showDoubleJqueryError(sliderID) {
+      var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+      errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+      errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+      errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+      errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+      jQuery(sliderID).show().html(errorMessage);
+    }
+  </script>
+  <script type="text/javascript">
+    var revapi1,
+      tpj;
+    (function() {
+      if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad);
+      else onLoad();
+
+      function onLoad() {
+        if (tpj === undefined) {
+          tpj = jQuery;
+          if ("off" == "on") tpj.noConflict();
+        }
+        if (tpj("#rev_slider_1_1").revolution == undefined) {
+          revslider_showDoubleJqueryError("#rev_slider_1_1");
+        } else {
+          revapi1 = tpj("#rev_slider_1_1").show().revolution({
+            sliderType: "standard",
+            jsFileLocation: "/js/",
+            sliderLayout: "fullwidth",
+            dottedOverlay: "none",
+            delay: 9000,
+            navigation: {
+              keyboardNavigation: "off",
+              keyboard_direction: "horizontal",
+              mouseScrollNavigation: "off",
+              mouseScrollReverse: "default",
+              onHoverStop: "off",
+              arrows: {
+                style: "zeus",
+                enable: true,
+                hide_onmobile: true,
+                hide_under: 900,
+                hide_onleave: false,
+                tmp: '<div class="tp-title-wrap">  	<div class="tp-arr-imgholder"></div> </div>',
+                left: {
+                  h_align: "left",
+                  v_align: "bottom",
+                  h_offset: 15,
+                  v_offset: 80
+                },
+                right: {
+                  h_align: "left",
+                  v_align: "bottom",
+                  h_offset: 15,
+                  v_offset: 30
+                }
+              }
+            },
+            responsiveLevels: [1240, 1024, 778, 480],
+            visibilityLevels: [1240, 1024, 778, 480],
+            gridwidth: [1350, 1024, 778, 480],
+            gridheight: [1000, 768, 720, 720],
+            lazyType: "none",
+            parallax: {
+              type: "mouse",
+              origo: "enterpoint",
+              speed: 400,
+              speedbg: 0,
+              speedls: 0,
+              levels: [1, 2, 3, 4, 5, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+            },
+            shadow: 0,
+            spinner: "spinner4",
+            stopLoop: "off",
+            stopAfterLoops: -1,
+            stopAtSlide: -1,
+            shuffle: "off",
+            autoHeight: "off",
+            hideThumbsOnMobile: "off",
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            debugMode: false,
+            fallbacks: {
+              simplifyAll: "off",
+              nextSlideOnWindowFocus: "off",
+              disableFocusListener: false,
+            }
+          });
+        };
+
+      };
+    }());
+  </script>
+</head>
+
+<body class='home page-template-default page page-id-1124 woocommerce-js wpb-js-composer js-comp-ver-5.7 vc_responsive' style='overflow-y: auto;'>
+  <div id="root"></div>
+
+</body>
+
+</html>
