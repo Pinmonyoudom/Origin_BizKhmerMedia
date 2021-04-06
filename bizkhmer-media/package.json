@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@ckeditor/ckeditor5-build-inline": "^12.3.0",
-    "@ckeditor/ckeditor5-font": "^11.2.1",
+    "@ckeditor/ckeditor5-font": "^27.0.0",
     "antd": "^3.20.0",
     "array-move": "^2.1.0",
     "aws-amplify": "^1.1.32",
